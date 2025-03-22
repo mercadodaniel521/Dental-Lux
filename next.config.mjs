@@ -7,21 +7,15 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',  // Necesario para exportación estática
+  basePath: '/mercadodaniel521', // Reemplaza con el nombre exacto de tu repositorio
   images: {
-    unoptimized: true,
+    unoptimized: true, // Necesario para exportación estática
   },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
-  },
+  trailingSlash: true, // Ayuda con las rutas en GitHub Pages
 }
+
+module.exports = nextConfig
 
 mergeConfig(nextConfig, userConfig)
 
