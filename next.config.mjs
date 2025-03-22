@@ -8,7 +8,7 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',  // Necesario para exportación estática
-  basePath: '/mercadodaniel521', // Reemplaza con el nombre exacto de tu repositorio
+  basePath: '/Dental-Lux', // Reemplaza con el nombre exacto de tu repositorio
   images: {
     unoptimized: true, // Necesario para exportación estática
   },
